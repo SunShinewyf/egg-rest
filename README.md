@@ -64,6 +64,11 @@ exports.rest = {
   //     index: true,
   //   }
   // }
+  errorResponse: null
+  // errorResponse: function* (ctx, err){
+  //     // give some error handling by yourself
+  // }
+  //
 };
 ```
 
