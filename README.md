@@ -43,7 +43,15 @@ exports.rest = {
 };
 ```
 
-Configure the rest plugin in `config/config.default.js`:
+Custom Config: Developers can custom some options to satisfy their own situations
+
+- `urlperfix` :  Prefix of rest api url. Defaluts to /api/
+- `authRequest`:  a function for getting some value of authentication
+- ` authIgnores`:  allow some request to ignore authentication
+- `errorResponse`:  Error handling function
+
+
+Example: Configure the rest plugin in `config/config.default.js`:
 
 ```js
 exports.rest = {
@@ -64,13 +72,9 @@ exports.rest = {
   //     index: true,
   //   }
   // }
-  errorResponse: null
-  // errorResponse: function* (ctx, err){
-  //     // give some error handling by yourself
-  // }
-  //
 };
 ```
+
 
 Controllers in files matching `${baseDir}/app/apis/**.js` will be loaded automatically according to routing rules.
 
