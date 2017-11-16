@@ -43,12 +43,14 @@ exports.rest = {
 };
 ```
 
-Custom Config: Developers can custom some options to satisfy their own situations
+## Configuration
 
-- `urlperfix` :  Prefix of rest api url. Defaluts to /api/
-- `authRequest`:  a function for getting some value of authentication
-- ` authIgnores`:  allow some request to ignore authentication
-- `errorResponse`:  Error handling function
+egg-rest supports some configurations below:
+
+- urlperfix: `Prefix of rest api url. Defaluts to /api/`
+- authRequest: `a function for getting some value of authentication`
+- authIgnores: `allow some request to ignore authentication`
+- errorResponse: `Error handling function`
 
 
 Example: Configure the rest plugin in `config/config.default.js`:
