@@ -45,19 +45,18 @@ exports.rest = {
 
 ## Configuration
 
-egg-rest supports some configurations below:
 
-- urlperfix: `Prefix of rest api url. Defaluts to /api/`
-- authRequest: `a function for getting some value of authentication`
-- authIgnores: `allow some request to ignore authentication`
-- errorResponse: `Error handling function`
+- `urlperfix`: Prefix of rest api url. Defalut to /api/
+- `authRequest`: a function for getting some value of authentication
+- `authIgnores`: allow some request to ignore authentication
+- `errorResponse`: Error handling function
 
 
 Example: Configure the rest plugin in `config/config.default.js`:
 
 ```js
 exports.rest = {
-  urlprefix: '/doc/api/', // Prefix of rest api url. Defaluts to /api/
+  urlprefix: '/doc/api/', // Prefix of rest api url. Defalut to /api/
   authRequest: null,
   // authRequest: function* (ctx) {
   //   // A truthy value must be returned when authentication succeeds.
